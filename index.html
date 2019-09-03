@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,40 +16,48 @@
         <title>Personal Portfolio</title>
     </head>
     <body>
-        <div class="container-fluid">
-            <!-- Navbar -->
-            <nav class="navbar navbar-light bg-light sticky-top">
-                <ul id="navbar" class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <!-- <div class="container-fluid"> -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <ul id="navbar" class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-            <!-- Content -->
-            <div data-spy="scroll" data-target="#navbar" data-offset="0">
-                <main id="home" class="jumbotron text-center">
-                    <h1 class="display-4">Hi, I am Denzel.</h1>
-                    <p id="welcome-text" class="lead ">Welcome to my personal portfolio!</p>
-                    <a href="#contact" class="btn btn-primary">See My Projects</a>
-                </main>
-                <h4 id="about-me">About Me</h4>
-                <p>...</p>
-                <h4 id="projects">Projects</h4>
-                <p>...</p>
-                <h4 id="contact">Contact</h4>
-                <p>...</p>
+        <!-- Content -->
+        <div data-spy="scroll" data-target="#navbar" data-offset="0">
+            <main id="home" class="jumbotron text-center">
+                <h1 class="display-4">Hi, I am Denzel</h1>
+                <p id="welcome-text" class="lead ">Welcome to my personal portfolio!</p>
+                <a href="#projects" class="btn btn-primary">See My Projects</a>
+            </main>
+            <div id="about-me" class="text-center">
+                <h4>About Me</h4>
+                <div id="about-me-container" class="row w-75 mx-auto align-items-center justify-content-center">
+                    <img src="img/display-pic.jpg" alt="" id="display-pic" class="col-md-4" />
+                    <p class="col-md-8 text-md-left">
+                        I am an aspiring self-taught web developer who continuously strives to improve my skill set. I always thrive to learn new
+                        things and I love new challenges. My long term goal is to become a Professional Full Stack Web Developer.
+                    </p>
+                </div>
             </div>
+            <h4 id="projects">Projects</h4>
+            <p>...</p>
+            <h4 id="contact">Contact</h4>
+            <p>...</p>
         </div>
+        <!-- </div> -->
 
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
