@@ -2,21 +2,103 @@
     font-family: "Montserrat", sans-serif;
 }
 
+h4 {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+}
+
+a {
+    color: #3aafa9;
+}
+
+a:hover {
+    color: #2b7a78;
+}
+
+h4::before {
+    content: "";
+    border-top: 3px solid #2b7a78;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    bottom: -7px;
+}
+
 /* Navbar */
+nav {
+    background-color: #17252a;
+}
+
 #navbar {
     margin: auto;
 }
 
+li a img {
+    transition: 0.2s;
+}
+
+#navbar li a:hover {
+    text-decoration: underline;
+}
+
 /* Jumbotron content */
+#home {
+    background-color: #2b7a78;
+    color: #feffff;
+}
+
+.jumbotron {
+    border-radius: 0;
+}
+
 #welcome-text {
     font-size: 2rem;
 }
 
+.btn-primary {
+    background-color: #17252a;
+    border-color: #17252a;
+}
+
+.btn-primary:hover {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.btn-primary:focus {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.btn-primary:active {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
 /* About section */
+#about-me {
+    background-color: #3aafa9;
+}
+
 #display-pic {
     border-radius: 50%;
     width: 200px;
     flex-basis: 0;
+}
+
+/* Project section */
+#projects {
+    background-color: #def2f1;
+}
+
+li a img:hover {
+    box-shadow: 0 0 20px #2b7a78;
+}
+
+/* Contact section */
+#contact {
+    background-color: #feffff;
 }
 
 /* Media queries */

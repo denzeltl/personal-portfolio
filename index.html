@@ -25,8 +25,8 @@
     <body>
         <!-- <div class="container-fluid"> -->
         <!-- Navbar -->
-        <nav class="navbar navbar-light bg-light sticky-top">
-            <ul id="navbar" class="nav nav-pills">
+        <nav class="navbar">
+            <ul id="navbar" class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -44,36 +44,157 @@
 
         <!-- Content -->
         <div data-spy="scroll" data-target="#navbar" data-offset="0">
-            <main id="home" class="jumbotron text-center">
+            <!-- Home content-->
+            <main id="home" class="jumbotron text-center mb-0">
                 <h1 class="display-4">Hi, I am Denzel</h1>
-                <p id="welcome-text" class="lead ">Welcome to my personal portfolio!</p>
-                <a href="#projects" class="btn btn-primary">See My Projects</a>
+                <p id="welcome-text" class="lead py-2">Welcome to my personal portfolio!</p>
+                <a href="#projects" class="btn btn-primary px-4 py-2">View Projects</a>
             </main>
-            <div id="about-me" class="text-center">
+
+            <!-- About me content -->
+            <section id="about-me" class="text-center py-5">
                 <h4>About Me</h4>
-                <div id="about-me-container" class="row w-75 mx-auto align-items-center justify-content-center">
-                    <img src="img/display-pic.jpg" alt="" id="display-pic" class="col-md-4 my-2" />
-                    <p class="col-md-8 text-md-left my-2">
-                        I am an aspiring self-taught web developer who continuously strives to improve my skill set. I always thrive to learn new
-                        things and I love new challenges. My long term goal is to become a Professional Full Stack Web Developer.
-                    </p>
+                <div class="container">
+                    <div id="about-me-container" class="row w-75 mx-auto align-items-center justify-content-center">
+                        <img src="img/display-pic.png" alt="" id="display-pic" class="col-md-4 my-2" />
+                        <p class="col-md-8 text-md-left my-2">
+                            I am an aspiring self-taught web developer who continuously strives to improve my skill set. I always thrive to learn new
+                            things and I love new challenges. My long term goal is to become a Professional Full Stack Web Developer.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <h4 id="projects">Projects</h4>
-            <p>...</p>
-            <div id="contact" class="text-center">
-                <h4>Contact Me</h4>
-                <ul class="row list-unstyled">
-                    <li class="col-md-6 row align-items-center justify-content-center my-2">
-                        <i class="fab fa-github"></i>
-                        <a class="my-0 ml-2" href="https://github.com/denzeltl" target="_blank">https://github.com/denzeltl</a>
-                    </li>
-                    <li class="col-md-6 row align-items-center justify-content-center my-2">
-                        <i class="fas fa-envelope"></i>
-                        <a class="my-0 ml-2" href="mailto:denzel706@yahoo.com.ph">denzel706@yahoo.com.ph</a>
-                    </li>
-                </ul>
-            </div>
+            </section>
+
+            <!-- Projects content -->
+            <section id="projects" class="text-center py-5">
+                <h4>Projects</h4>
+                <div class="container my-3">
+                    <ul class="row list-unstyled align-items-center justify-content-center">
+                        <li class="row col-lg-12  align-items-center justify-content-center my-2">
+                            <a href="https://denzeltl.github.io/rubiks-cube-solution/" target="_blank" class="col-lg-6"
+                                ><img src="img/rubiks-cube.PNG" alt="" class="w-100"
+                            /></a>
+                            <div class="row flex-column col-lg-6 mx-auto align-items-center justify-content-center mt-4 ml-2">
+                                <a href="https://denzeltl.github.io/rubiks-cube-solution/" target="_blank" class="mr-auto"
+                                    ><h5>Rubik's Cube Solution</h5></a
+                                >
+                                <p class="mr-auto text-left">
+                                    Technical documentation page that demonstrates algorithms to speed solve the Rubik’s cube
+                                </p>
+                                <ul class="d-flex flex-row justify-content-around w-100">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>jQuery</li>
+                                </ul>
+                                <a href="https://github.com/denzeltl/rubiks-cube-solution" target="_blank" class="btn btn-secondary mt-3"
+                                    >View Code</a
+                                >
+                            </div>
+                        </li>
+                        <li class="row col-lg-12 align-items-center justify-content-center my-2 mt-5">
+                            <a href="https://denzeltl.github.io/docprep-template/" target="_blank" class="col-lg-6"
+                                ><img src="img/docprep-template.PNG" alt="" class="w-100"
+                            /></a>
+                            <div class="row flex-column col-lg-6 mx-auto align-items-center justify-content-center mt-4 ml-2">
+                                <a href="https://denzeltl.github.io/docprep-template/" target="_blank" class="mr-auto"
+                                    ><h5>Document Preparation Template</h5></a
+                                >
+                                <p class="mr-auto text-left">
+                                    Template used while working at <i>Gadens</i> to assist with daily tasks by eliminating common errors
+                                </p>
+                                <ul class="d-flex flex-row justify-content-around w-100">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a href="https://github.com/denzeltl/docprep-template" target="_blank" class="btn btn-secondary mt-3">View Code</a>
+                            </div>
+                        </li>
+                        <li class="row col-lg-12 align-items-center justify-content-center my-2 mt-5">
+                            <a href="https://denzeltl.github.io/number-guessing-game/" target="_blank" class="col-lg-6"
+                                ><img src="img/number-game.PNG" alt="" class="w-100"
+                            /></a>
+                            <div class="row flex-column col-lg-6 mx-auto align-items-center justify-content-center mt-4 ml-2">
+                                <a href="https://denzeltl.github.io/number-guessing-game/" target="_blank" class="mr-auto"
+                                    ><h5>Number Guessing Game</h5></a
+                                >
+                                <p class="mr-auto text-left">
+                                    My take on MDN’s number guessing game where you guess a selected number between 1-150
+                                </p>
+                                <ul class="d-flex flex-row justify-content-around w-100">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a href="https://github.com/denzeltl/number-guessing-game" target="_blank" class="btn btn-secondary mt-3"
+                                    >View Code</a
+                                >
+                            </div>
+                        </li>
+                        <li class="row col-lg-12 align-items-center justify-content-center my-2 mt-5">
+                            <a href="https://denzeltl.github.io/color-game-project/" target="_blank" class="col-lg-6"
+                                ><img src="img/color-game.PNG" alt="" class="w-100"
+                            /></a>
+                            <div class="row flex-column col-lg-6 mx-auto align-items-center justify-content-center mt-4 ml-2">
+                                <a href="https://denzeltl.github.io/color-game-project/" target="_blank" class="mr-auto"
+                                    ><h5>Color Game Project</h5></a
+                                >
+                                <p class="mr-auto text-left">
+                                    Pick the right color based from the RGB values shown – taken from Colt Steele’s
+                                    <i>The Web Developer Bootcamp</i> on Udemy
+                                </p>
+                                <ul class="d-flex flex-row justify-content-around w-100">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Tailwind CSS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <a href="https://github.com/denzeltl/color-game-project" target="_blank" class="btn btn-secondary mt-3">View Code</a>
+                            </div>
+                        </li>
+                        <li class="row col-lg-12 align-items-center justify-content-center my-2 mt-5">
+                            <a href="https://denzeltl.github.io/rr-wraith/" target="_blank" class="col-lg-6"
+                                ><img src="img/rr-wraith.PNG" alt="" class="w-100"
+                            /></a>
+                            <div class="row flex-column col-lg-6 mx-auto align-items-center justify-content-center mt-4 ml-2">
+                                <a href="https://denzeltl.github.io/rr-wraith/" target="_blank" class="mr-auto"
+                                    ><h5>Rolls-Royce Wraith Landing Page</h5></a
+                                >
+                                <p class="mr-auto text-left">
+                                    Responsive landing page for Rolls-Royce Wraith (project for
+                                    <i>Responsive Web Design Projects – Build a Product Landing Page</i> on freeCodeCamp.org)
+                                </p>
+                                <ul class="d-flex flex-row justify-content-around w-100">
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Bulma</li>
+                                </ul>
+                                <a href="https://github.com/denzeltl/rr-wraith" target="_blank" class="btn btn-secondary mt-3">View Code</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Contact me content -->
+            <section id="contact" class="text-center py-5">
+                <h4>Contact</h4>
+                <div class="container">
+                    <ul class="row list-unstyled">
+                        <li class="col-md-6 row align-items-center justify-content-center my-2">
+                            <i class="fab fa-github"></i>
+                            <a class="my-0 ml-2" href="https://github.com/denzeltl" target="_blank">https://github.com/denzeltl</a>
+                        </li>
+                        <li class="col-md-6 row align-items-center justify-content-center my-2">
+                            <i class="fas fa-envelope"></i>
+                            <a class="my-0 ml-2" href="mailto:denzel706@yahoo.com.ph">denzel706@yahoo.com.ph</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </div>
         <!-- </div> -->
 
