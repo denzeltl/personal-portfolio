@@ -2,6 +2,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h4 {
     position: relative;
     display: inline-block;
